@@ -10,7 +10,7 @@ source:
     - 0001-Implement-mempcpy-via-memcpy.patch
 
 build:
-  number: 3
+  number: 4
   detect_binary_files_with_prefix: False
   script: python setup.py install --single-version-externally-managed --root=/
   # Use winkerberos on Windows
@@ -26,7 +26,7 @@ requirements:
     - pip
     - setuptools
     - wheel
-    - krb5
+    - krb5 1.20.1
   run:
     - python
     - krb5
